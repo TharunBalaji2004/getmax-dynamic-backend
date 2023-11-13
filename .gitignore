@@ -1,0 +1,42 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv environment variables file
+.env.local
+
+# Visual Studio Code settings
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# IDE files
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
