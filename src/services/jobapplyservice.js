@@ -10,7 +10,7 @@ initializeApp(fbaseconfig.config)
 // Initialize firebase cloud storage and get reference
 const storage = getStorage();
 
-export const uploadResume = async(pdfFile) => {
+export const uploadResume = async (pdfFile) => {
   try {
     // Upload PDF file to Firebase Storage
     const uniqueFilename = uuidv4();
@@ -19,7 +19,7 @@ export const uploadResume = async(pdfFile) => {
 
     const snapshot = await uploadBytesResumable(storageRef, pdfFile, metadata);
 
-    const downloadUrl = await getDownloadURL(snapshot.ref);    
+    const downloadUrl = await getDownloadURL(snapshot.ref);
 
     return downloadUrl;
   } catch (error) {
@@ -33,7 +33,7 @@ export const createApplication = async (applicationData) => {
     await prisma.application.create({
       data: applicationData
     });
-    
+
   } catch (error) {
     console.error(error);
     throw new Error('Failed to create application.');

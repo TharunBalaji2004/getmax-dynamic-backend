@@ -25,7 +25,6 @@ model application{
   resumelink String
 }
 
-
 model jobs {
   jobid       Int      @id @default(autoincrement())
   jobtitle    String

@@ -7,6 +7,6 @@ const jobApplyRouter = express.Router();
 
 jobApplyRouter.post("/upload", uploadMulter.single("resume"), upload);
 jobApplyRouter.post("/apply", apply);
-jobApplyRouter.get("/",read);
+jobApplyRouter.get("/", read);
 
 export default jobApplyRouter;
