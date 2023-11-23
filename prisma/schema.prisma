@@ -8,21 +8,21 @@ datasource db {
 }
 
 model application{
-  applicantid Int @id @default(autoincrement())
+  applicantid   Int @id @default(autoincrement())
   applicantname String
-  jobid Int
-  eduqualify String
-  exptype String
-  expyears Int
-  phonenumber String
-  emailid String
-  address String
-  city String
-  prevemployer String
-  currsalary Int
-  expsalary Int
-  noticeperiod Int
-  resumelink String
+  jobid         Int
+  eduqualify    String
+  exptype       String
+  expyears      Int
+  phonenumber   String
+  emailid       String
+  address       String
+  city          String
+  prevemployer  String
+  currsalary    Int
+  expsalary     Int
+  noticeperiod  Int
+  resumelink    String
 }
 
 model jobs {
