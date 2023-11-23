@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model application{
+  applicantid Int @id @default(autoincrement())
+  applicantname String
+  jobid Int
+  eduqualify String
+  exptype String
+  expyears Int
+  phonenumber String
+  emailid String
+  address String
+  city String
+  prevemployer String
+  currsalary Int
+  expsalary Int
+  noticeperiod Int
+  resumelink String
+}
+
+
+model jobs {
+  jobid       Int      @id @default(autoincrement())
+  jobtitle    String
+  jobdesc     String
+  jobtype     String
+  joblocation String
+  jobskills   String
+  jobsalrange String
+  jobexprange String
+}
